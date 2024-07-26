@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Permanent+Marker&display=swap");
+
+:root {
+  --bg-color: #1e1e1e;
+  --second-color: #b3a0cd;
+  --text-color: #e9e3dc;
+  --bloc-color: #d1ef53;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bowlby One", sans-serif;
+  color: var(--text-color);
+  text-decoration: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 1000px;
+  background: var(--bg-color);
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 30px;
+}
+.links a {
+  font-size: 16px;
+  margin-left: 20px;
+}
+.order_online {
+  background: var(--second-color);
+  color: var(--bg-color);
+  padding: 10px 15px;
+}
+h1 {
+  width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  line-height: 1em;
+  font-size: 80px;
+}
+.logo:hover {
+  color: var(--second-color);
+}
+.box-images {
+  position: relative;
+}
+.box-images .burgers {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -5rem;
+}
+.burgers img {
+  width: 300px;
+  background-size: cover;
+}
+.burger1 {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  position: absolute;
+  left: 500px;
+}
+.burger2 {
+  position: absolute;
+  z-index: 10;
+}
+.burger3 {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  position: absolute;
+  right: 500px;
+}
+.yellow-box {
+  padding: 1rem 3rem;
+  width: 100%;
+  height: 250px;
+  background: #d1ef53;
+  margin-top: 12rem;
+  margin: 12rem auto;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.15rem;
+  place-content: center;
+}
+.yellow-box h2 {
+  color: #1e1e1e;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2.2rem;
+}
+.yellow-box div p {
+  color: #1e1e1e;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.yellow-box div button {
+  background-color: var(--text-color);
+  color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  box-shadow: 5px 5px 0;
+  cursor: pointer;
+}
+.burgers::before {
+  content: url(/assets/decor-left.png);
+  
+}
+.burgers::after {
+  content: url(/assets/decor-right.png);
+}
