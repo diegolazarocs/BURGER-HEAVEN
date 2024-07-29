@@ -69,29 +69,40 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -5rem;
+  top: -4.3rem;
+  z-index: 200;
 }
 .burgers img {
-  width: 300px;
+  width: 260px;
   background-size: cover;
 }
 .burger1 {
-  height: 150px;
-  width: 150px;
   background-size: cover;
   position: absolute;
   left: 500px;
 }
 .burger2 {
+  background-size: cover;
   position: absolute;
   z-index: 10;
+  scale: 1.3;
 }
 .burger3 {
-  height: 150px;
-  width: 150px;
   background-size: cover;
   position: absolute;
   right: 500px;
+}
+.decor-left{
+  position: absolute;;
+  left: 0;
+  z-index: -1;
+  scale: 1.2;
+}
+.decor-right{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  scale: 1.2;
 }
 .yellow-box {
   padding: 1rem 3rem;
@@ -127,11 +138,4 @@ h1 {
   padding: 0.5rem 1rem;
   box-shadow: 5px 5px 0;
   cursor: pointer;
-}
-.burgers::before {
-  content: url(/assets/decor-left.png);
-  
-}
-.burgers::after {
-  content: url(/assets/decor-right.png);
 }
